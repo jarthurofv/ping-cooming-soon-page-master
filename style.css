@@ -133,6 +133,7 @@ footer p {
   h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
   .container {
     padding: 0 2rem;
