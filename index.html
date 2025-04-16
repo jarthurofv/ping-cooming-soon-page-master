@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7fa23069e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Ping logo" />
+      </div>
+      <h1>We are launching <span>soon!</span></h1>
+      <p class="subsnoty">Subscribe and get notified.</p>
+
+      <form class="form" novalidate id="form" action="submit">
+        <div>
+          <input
+            class="email"
+            type="email"
+            novalidate
+            placeholder="Your email address..."
+          />
+
+          <button class="submit-email" type="submit">Notify Me</button>
+        </div>
+        <p class="empty-email-message"></p>
+        <p class="invalid-email-message"></p>
+      </form>
+
+      <img
+        src="images/illustration-dashboard.png"
+        alt="illustration-dashboard"
+      />
+      <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+      <footer>
+        <p>Copyright Ping. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

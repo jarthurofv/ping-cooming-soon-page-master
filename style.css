@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 4rem auto;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+h1 span {
+  color: black;
+  font-weight: 800;
+}
+
+.subsnoty {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+  margin-bottom: 0.5rem;
+}
+
+.form div {
+  display: flex;
+}
+
+input[type="email"] {
+  width: 70%;
+  min-width: 400px;
+  padding: 1.1rem 2rem;
+  border-radius: 500px;
+  background-color: hsl(0, 0%, 98%);
+  font-size: 1rem;
+  border: 1px solid hsl(0, 0%, 59%);
+  color: hsl(0, 0%, 59%);
+  margin-right: 1rem;
+}
+
+.empty-email-message,
+.invalid-email-message {
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: rgb(148, 29, 29);
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  text-align: left;
+  margin-left: 0;
+  position: relative;
+  right: 12rem;
+}
+
+button {
+  padding: 1.1rem 4rem;
+  border-radius: 500px;
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+img {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.socials {
+  margin-top: 4rem;
+}
+
+.socials a i {
+  margin: 0 0.7rem;
+  text-decoration: none;
+  border: 0.8px solid hsl(0, 6%, 85%);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: hsl(223, 87%, 63%);
+}
+
+.socials a i:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+}
+
+footer p {
+  margin: 2rem auto;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+
+  .form {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem auto;
+  }
+
+  .form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    min-width: auto;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .empty-email-message,
+  .invalid-email-message {
+    right: 6rem;
+  }
+
+  button {
+    width: 100%;
+    min-width: auto;
+    margin: 0 auto;
+  }
+
+  .subsnoty {
+    font-size: 1rem;
+  }
+}
